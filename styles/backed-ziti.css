@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    position: relative;
+}
+
+h1, h2, h3, h4{
+    color: #222222;
+    line-height: 1.2;
+}
+
+p, li{
+    color: #343434;
+    line-height: 1.4;
+}
+
+.home-button{
+    position: absolute;
+    top: 1%;
+    right: 1.5%;
+
+    width: 50px;
+    height: 50px;
+}
+
+.home-button img{
+    height: auto;
+    width: 100%;
+}
+
+.container{
+    width: 120rem;
+    margin: 0 auto;
+    padding: 0 2.4rem 3rem 2.4rem;
+    background-color: #f1f3f5;
+}
+
+body:nth-child(2) .container{
+    padding-top: 2.4rem;
+}
+
+h1{
+    font-size: 6.4rem;
+    margin-bottom: 1.4rem;
+}
+
+h2{
+    font-size: 3.2rem;
+    margin-bottom: 1.3rem;
+}
+
+h3{
+    font-size: 2.8rem;
+    margin-bottom: 1.1rem;
+}
+
+p, li{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.image-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 75fr 25fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.image-box > *{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.image-box p {
+    grid-column: 1 / 3;
+    padding: 0 3.6rem;
+}
+
+.image-box img:nth-child(2){
+    height: 400px;
+    width: auto;
+}
+
+ol, ul{
+    padding: 2.4rem;
+}
